@@ -41,14 +41,14 @@ jobs:
       - name: Login to DockerHub
         uses: docker/login-action@v3
         with:
-          username: roxedus
+          username: irakhlin
           password: ${{ secrets.DOCKER_HUB_PASSWORD }}
 
       - name: Login to GitHub Container Registry
         uses: docker/login-action@v3
         with:
           registry: ghcr.io
-          username: roxedus
+          username: irakhlin
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build and push
@@ -77,14 +77,14 @@ jobs:
       - name: Login to DockerHub
         uses: docker/login-action@v3
         with:
-          username: roxedus
+          username: irakhlin
           password: ${{ secrets.DOCKER_HUB_PASSWORD }}
 
       - name: Login to GitHub Container Registry
         uses: docker/login-action@v3
         with:
           registry: ghcr.io
-          username: roxedus
+          username: irakhlin
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create manifests for DockerHub

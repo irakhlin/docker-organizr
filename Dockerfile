@@ -1,8 +1,8 @@
 ARG BASE_IMAGE
 ARG ARCH
-FROM ${BASE_IMAGE:-ghcr.io/organizr/base:2023-11-30_13}-${ARCH:-linux-amd64}
+FROM ${BASE_IMAGE:-ghcr.io/irakhlin/organizr-base:2026-08-26_16}-${ARCH:-linux-amd64}
 
-LABEL maintainer="christronyxyocum,Roxedus"
+LABEL maintainer="irakhlin"
 
 ENV fpm="false" branch="v2-master"
 
