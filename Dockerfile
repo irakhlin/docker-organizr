@@ -1,6 +1,6 @@
 ARG BASE_IMAGE
 ARG ARCH
-FROM ${BASE_IMAGE:-ghcr.io/irakhlin/organizr-base:irakhlin/2026-10-22_07}-${ARCH:-linux-amd64}
+FROM ${BASE_IMAGE:-ghcr.io/irakhlin/organizr-base:2026-10-22_07}-${ARCH:-linux-amd64}
 
 LABEL maintainer="irakhlin"
 
